@@ -1,0 +1,73 @@
+/* CSS Variables - Hrfa.ma (Monochromatic Blue Light Theme) */
+:root {
+    /* Palette */
+    --primary-dark: #06141B;
+    /* Dark Navy - Text & Secondary Backgrounds */
+    --secondary-dark: #11212D;
+    /* Electric Blue - Icons & Interactive */
+    --accent-color: #11212D;
+    /* Mapped to Secondary for Monochromatic feel */
+    --light-grey: #F8F9FA;
+    /* Main Background */
+    --white: #ffffff;
+
+    /* Layout Colors */
+    --bg-main: var(--light-grey);
+    --bg-secondary: #E9ECEF;
+    /* Slightly darker for contrast */
+    --bg-card: var(--white);
+    --bg-glass: rgba(255, 255, 255, 0.85);
+
+    /* Text Colors (Dark on Light) */
+    --text-primary: var(--primary-dark);
+    --text-secondary: var(--secondary-dark);
+    --text-muted: #6C757D;
+    --text-gold: #D4AF37;
+    /* Kept for ratings */
+
+    /* Action Colors */
+    --primary-color: var(--secondary-dark);
+    /* Main buttons */
+    --primary-hover: #1B2A36;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #11212D 0%, #06141B 100%);
+    --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+    --gradient-green: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    /* WhatsApp */
+
+    /* Spacing */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 48px;
+    --spacing-xl: 64px;
+
+    /* Borders & Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+
+    --border-light: rgba(6, 20, 27, 0.1);
+    /* Dark border for light theme */
+    --border-highlight: rgba(17, 33, 45, 0.2);
+
+    /* Shadows (Darker for Light Theme) */
+    --shadow-sm: 0 2px 4px rgba(6, 20, 27, 0.05);
+    --shadow-md: 0 4px 6px rgba(6, 20, 27, 0.1);
+    --shadow-lg: 0 10px 15px rgba(6, 20, 27, 0.1);
+
+    /* Glows (Subtler) */
+    --glow-primary: 0 0 10px rgba(17, 33, 45, 0.3);
+    --glow-card: 0 10px 25px rgba(6, 20, 27, 0.15);
+
+    /* Fonts */
+    --font-heading: 'Tajawal', sans-serif;
+    --font-body: 'Tajawal', sans-serif;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}

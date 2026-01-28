@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="لوحة تحكم الزبون - hrfa.ma">
+    <title>لوحة التحكم - hrfa.ma</title>
+    <link rel="icon" type="image/svg+xml" href="../frontend/assets/icons/favicon.svg">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="dashboard-body">
+    <main class="dashboard-wrapper">
+        <header class="dashboard-header">
+            <div class="welcome-text">
+                <h1>مرحباً، <span class="brand-highlight">أحمد</span> 👋</h1>
+                <p>أشنو هي الخدمة اللي محتاج اليوم؟</p>
+            </div>
+            <div class="quick-stats" style="display: flex; gap: 15px;">
+                <div class="stat-card-modern">
+                    <div class="stat-icon-wrapper"><i class="fas fa-clipboard-list"></i></div>
+                    <div class="stat-content">
+                        <h4>طلبات نشطة</h4>
+                        <span class="value">2</span>
+                    </div>
+                </div>
+                <div class="stat-card-modern">
+                    <div class="stat-icon-wrapper"><i class="fas fa-check-circle"></i></div>
+                    <div class="stat-content">
+                        <h4>خدمات مكتملة</h4>
+                        <span class="value">14</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="search-area">
+            <div class="search-card">
+                <div class="search-input-group main-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="مثلاً: سباك، كهربائي...">
+                </div>
+                <div class="search-input-group city-search">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" placeholder="المدينة">
+                </div>
+                <button class="btn btn-client search-submit">
+                    <i class="fas fa-filter"></i> بحث
+                </button>
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <div class="section-header">
+                <h2 class="section-title">استكشف الخدمات</h2>
+            </div>
+            <div class="categories-grid">
+                <a href="#" class="category-item">
+                    <div class="icon-box"><i class="fas fa-faucet"></i></div>
+                    <span>السباكة</span>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="icon-box"><i class="fas fa-bolt"></i></div>
+                    <span>الكهرباء</span>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="icon-box"><i class="fas fa-paint-roller"></i></div>
+                    <span>الصباغة</span>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="icon-box"><i class="fas fa-hammer"></i></div>
+                    <span>النجارة</span>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="icon-box"><i class="fas fa-snowflake"></i></div>
+                    <span>التكييف</span>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="icon-box"><i class="fas fa-trowel-bricks"></i></div>
+                    <span>البناء</span>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="icon-box"><i class="fas fa-broom"></i></div>
+                    <span>التنظيف</span>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="icon-box"><i class="fas fa-seedling"></i></div>
+                    <span>البستنة</span>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="icon-box"><i class="fas fa-truck-moving"></i></div>
+                    <span>الرحيل</span>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="icon-box"><i class="fas fa-tv"></i></div>
+                    <span>الأجهزة</span>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="icon-box"><i class="fas fa-couch"></i></div>
+                    <span>الديكور</span>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+                    <span>الحماية</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="suggestions-section">
+            <div class="section-header">
+                <h2 class="section-title">حرفيين مقترحين لك</h2>
+                <a href="#" class="view-all">عرض الكل <i class="fas fa-chevron-left"></i></a>
+            </div>
+
+            <div class="artisans-grid">
+                <!-- Card 1 -->
+                <div class="artisan-card">
+                    <div class="card-image">
+                        <img src="../frontend/assets/images/default-avatar.svg" alt="صورة الحرفي"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <span class="badge-city">الدار البيضاء</span>
+                    </div>
+                    <div class="artisan-info">
+                        <h3 class="artisan-name">المعلم يوسف</h3>
+                        <p class="specialty">خبير سباكة (12 سنة خبرة)</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> <span>4.8</span> <small>(120 تقييم)</small>
+                        </div>
+                        <div class="card-footer">
+                            <a href="artisan-profile.html" class="btn btn-secondary btn-sm">الملف الشخصي</a>
+                            <a href="tel:06000000" class="btn btn-client btn-sm"><i class="fas fa-phone"></i> اتصل</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="artisan-card">
+                    <div class="card-image">
+                        <img src="../frontend/assets/images/electrician.png" alt="صورة الحرفي"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <span class="badge-city">الرباط</span>
+                    </div>
+                    <div class="artisan-info">
+                        <h3 class="artisan-name">كريم الكهربائي</h3>
+                        <p class="specialty">كهرباء المنازل (8 سنوات خبرة)</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> <span>4.9</span> <small>(85 تقييم)</small>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-secondary btn-sm">الملف الشخصي</a>
+                            <a href="tel:06000000" class="btn btn-client btn-sm"><i class="fas fa-phone"></i> اتصل</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="artisan-card">
+                    <div class="card-image">
+                        <img src="../frontend/assets/images/painter.png" alt="صورة الحرفي"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <span class="badge-city">مراكش</span>
+                    </div>
+                    <div class="artisan-info">
+                        <h3 class="artisan-name">حسن الصباغ</h3>
+                        <p class="specialty">ديكور وصباغة (15 سنة خبرة)</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> <span>4.7</span> <small>(200 تقييم)</small>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-secondary btn-sm">الملف الشخصي</a>
+                            <a href="tel:06000000" class="btn btn-client btn-sm"><i class="fas fa-phone"></i> اتصل</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="artisan-card">
+                    <div class="card-image">
+                        <img src="../frontend/assets/images/carpenter.png" alt="صورة الحرفي"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <span class="badge-city">طنجة</span>
+                    </div>
+                    <div class="artisan-info">
+                        <h3 class="artisan-name">عمر النجار</h3>
+                        <p class="specialty">نجارة الخشب والمطابخ</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> <span>4.5</span> <small>(60 تقييم)</small>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-secondary btn-sm">الملف الشخصي</a>
+                            <a href="tel:06000000" class="btn btn-client btn-sm"><i class="fas fa-phone"></i> اتصل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>© 2026 hrfa.ma - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        // كود حماية الصفحة (Security Check)
+        // هذا الكود يتحقق مما إذا كان المستخدم قد سجل الدخول
+        // ملاحظة: لتفعيله، يجب أولاً حفظ حالة الدخول في localStorage عند الضغط على زر الدخول
+        if (!localStorage.getItem('isLoggedIn')) {
+            window.location.href = 'client-login.html';
+        }
+    </script>
+</body>
+
+</html>

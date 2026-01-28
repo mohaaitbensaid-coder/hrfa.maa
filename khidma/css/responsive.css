@@ -1,0 +1,178 @@
+/* =========================================
+   RESPONSIVE DESIGN (Mobile First Optimization)
+   ========================================= */
+
+/* --- Mobile Navigation (Premium Slide) --- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    .navbar-brand img {
+        height: 40px !important;
+        /* Mobile Logo Size */
+    }
+
+    .navbar-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(2, 6, 23, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--border-light);
+        flex-direction: column;
+        padding: var(--spacing-md);
+        gap: var(--spacing-sm);
+        animation: slideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--border-light);
+    }
+
+    .navbar-links a:hover {
+        background: var(--primary-color);
+        color: white;
+        border-color: var(--primary-color);
+    }
+
+    .menu-toggle {
+        display: block;
+        padding: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: var(--radius-sm);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Hero Section & Typography --- */
+@media (max-width: 768px) {
+    .hero-header {
+        padding: 100px var(--spacing-sm) var(--spacing-lg);
+        min-height: auto;
+    }
+
+    .hero-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-stats {
+        gap: var(--spacing-md);
+    }
+
+    .hero-stat {
+        width: 45%;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* --- Grids (Cards) --- */
+@media (max-width: 768px) {
+
+    .features-grid,
+    .artisans-grid {
+        grid-template-columns: 1fr;
+        /* Single column on mobile */
+        padding: 0 var(--spacing-sm);
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-xs);
+        padding: 0 var(--spacing-sm);
+    }
+
+    .search-card {
+        flex-direction: column;
+        padding: var(--spacing-sm);
+    }
+
+    .search-input-group {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+/* --- Tables (Dashboard) --- */
+@media (max-width: 768px) {
+    .data-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .dashboard-stats {
+        flex-direction: column;
+    }
+
+    .stat-card {
+        width: 100%;
+    }
+}
+
+/* --- Profile Page --- */
+@media (max-width: 768px) {
+    .profile-cover {
+        height: 180px;
+    }
+
+    .profile-main-info {
+        margin-top: -60px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-avatar {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto var(--spacing-sm);
+    }
+
+    .profile-details {
+        width: 100%;
+    }
+
+    .profile-details h1 {
+        font-size: 2rem;
+    }
+
+    .profile-badges {
+        justify-content: center;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact-buttons .btn {
+        width: 100%;
+    }
+}
